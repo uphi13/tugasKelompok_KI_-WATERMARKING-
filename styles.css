@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.file-input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.file-input {
+    margin: 0 10px;
+    position: relative;
+    display: inline-block;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.btn-file {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 24px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-file:hover {
+    background-color: #0062cc;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 24px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.canvas-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+canvas {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .file-input-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .file-input {
+        margin: 10px 0;
+    }
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e9ecef;
+} 

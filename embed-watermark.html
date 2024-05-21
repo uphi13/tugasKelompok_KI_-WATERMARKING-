@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Watermark</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">&#8592; Kembali</a>
+        <h1>Embed Watermark</h1>
+        <div class="file-input-group">
+            <div class="file-input">
+                <input type="file" id="cover-image" accept="image/*">
+                <label for="cover-image" class="btn-file">Pilih Gambar Cover</label>
+            </div>
+            <div class="file-input">
+                <input type="file" id="watermark-image" accept="image/*">
+                <label for="watermark-image" class="btn-file">Pilih Gambar Watermark</label>
+            </div>
+        </div>
+        <button id="embed-watermark" class="btn">Embed Watermark</button>
+        <div class="canvas-container">
+            <canvas id="result-canvas"></canvas>
+        </div>
+        <a id="download-link" download="watermarked-image.png" style="display: none;" class="btn">Download Image</a>
+        <div id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Memproses gambar...</p>
+        </div>
+    </div>
+
+    <script src="embed-watermark.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekstrak Watermark</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">&#8592; Kembali</a>
+        <h1>Ekstrak Watermark</h1>
+        <div class="file-input-group">
+            <div class="file-input">
+                <input type="file" id="watermarked-image" accept="image/*">
+                <label for="watermarked-image" class="btn-file">Pilih Gambar</label>
+            </div>
+        </div>
+        <button id="extract-watermark" class="btn">Ekstrak Watermark</button>
+        <div class="canvas-container">
+            <canvas id="watermark-canvas"></canvas>
+        </div>
+        <div id="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Memproses gambar...</p>
+        </div>
+    </div>
+
+    <script src="extract-watermark.js"></script>
+</body>
+</html>
